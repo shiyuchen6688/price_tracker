@@ -9,9 +9,10 @@ Track the of given url product, if the product drop below user specified price, 
 ## How to run
 
 run in terminal with cmd:
-'''
+
+```
 node parser <url of the item> <expected price> <email to recieve notification when item on sale>
-'''
+```
 
 ## func
 
