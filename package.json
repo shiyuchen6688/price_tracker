@@ -9,6 +9,7 @@
   "author": "SC",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "dotenv": "^8.2.0",
     "nightmare": "^3.0.2"
   }
