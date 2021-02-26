@@ -11,9 +11,10 @@ sgMail.setApiKey(process.env.SENDGRIPD_API_KEY); // set API key for all request 
 let nightmare = require('nightmare');
 
 // allow user to pass parameter
-// CONSTNATS:
+
 const args = process.argv.slice(2);
 
+// CONSTNATS:
 // const PRODUCT_URL = "https://www.amazon.ca/Samsung-LC34J791WTNXZA-34-inch-Curved-Monitor/dp/B07CS3JB5K";
 const PRODUCT_URL = args[0];
 
@@ -21,6 +22,7 @@ const PRICE_SPAN_ID = "priceblock_ourprice";
 
 // const EXPECTED_PRICE = 1800;
 const EXPECTED_PRICE = parseFloat(args[1]);
+const USER_EMAIL = args[2];
 
 async function checkPrice() {
     try {
@@ -59,7 +61,7 @@ async function checkPrice() {
 
 function sendEmail(subject, body) {
     const email = {
-        to: "shiyuchen66668888@gmail.com",
+        to: USER_EMAIL,
         from: "shiyuchen6688@gmail.com",
         subject: subject,
         text: body,

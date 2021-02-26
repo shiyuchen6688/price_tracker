@@ -14,6 +14,6 @@ run in terminal with cmd:
 node parser <url of the item> <expected price> <email to recieve notification when item on sale>
 ```
 
-## func
+## Status:
 
-## Status: Version one done
+Version one done
